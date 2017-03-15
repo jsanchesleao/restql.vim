@@ -8,6 +8,8 @@ syntax match restqlKeyword "timeout"
 syntax match restqlKeyword "only"
 syntax match restqlKeyword "null"
 
+syntax match restqlComment "\v//(\S+| )*"
+
 syntax match restqlNumber "\v\d+>"
 syntax match restqlNumber "\v\d+>"
 syntax match restqlBool "\vtrue>"
@@ -23,3 +25,4 @@ highlight default link restqlNumber Number
 highlight default link restqlString String
 highlight default link restqlBool Boolean
 highlight default link restqlApplyOperator Operator
+highlight default link restqlComment Comment
